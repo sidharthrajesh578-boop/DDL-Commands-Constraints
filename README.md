@@ -1,1 +1,8 @@
 # DDL-Commands-Constraints
+This assignment is about building an Employee Database in MySQL and practicing DDL (Data Definition Language) commands and table constraints. The database has three related tables: departments, location, and employees. Each employee belongs to one department and one location.
+
+In the first part, the assignment covers the main DDL commands. The database and its tables were created using CREATE. The employees table was then changed using ALTER: an email column was added, the designation column was widened to hold longer values, the age column was removed, and hire_date was renamed to date_of_joining. The departments and location tables were renamed to departments_info and locations using RENAME. All rows of the employees table were removed using TRUNCATE, and finally the employees table and the employee database were deleted using DROP.
+
+In the second part, the database was recreated with constraints to keep the data valid. In the departments table, department_id is the primary key, and department_name cannot be empty or duplicated. In the location table, location_id is generated automatically in sequence using auto increment, and the location name cannot be empty or duplicated. In the employees table, every employee has a unique id, the name is required, gender can only be M or F, age must be 18 or above, the hire date is set to the current date automatically if not given, and department_id and location_id are linked to their own tables using foreign keys.
+
+The assignment was completed and tested in MySQL Workbench using MySQL 8.0, and the complete SQL script is submitted as a single fi
